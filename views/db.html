@@ -1,0 +1,15 @@
+{{>navbar}}
+{{>error_flash}}
+<div class="jumbotron">
+  <div class="container">
+  	<div class="list-group">
+  		{{#each quotes}}
+  		<a href="//twitter.com/GrecoSays/status/{{this.twitterId}}" class="list-group-item">
+    		<h2 class="list-group-item-heading">{{this.text}}</h2>
+    		<p class="list-group-item-text">submitted {{this.created}} by {{this.owner}}</p>
+  		</a>
+  		{{/each}}
+    </div>
+  </div>
+</div>
+{{>footer}}

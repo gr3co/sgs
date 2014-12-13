@@ -1,0 +1,25 @@
+{
+  "name": "sgs",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node app.js",
+    "prod": "NODE_ENV=production node app.js"
+  },
+  "dependencies": {
+    "connect-mongo": "*",
+    "connect-flash": "*",
+    "express": "3.x",
+    "express3-handlebars": "*",
+    "express-slash": "*",
+    "express-validator": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-facebook": "*",
+    "passport.socketio" : "*",
+    "scrypt": "*",
+    "socket.io": "*",
+    "twitter": "*",
+    "underscore": "*"
+  }
+}

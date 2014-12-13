@@ -1,0 +1,41 @@
+{{>navbar}}
+{{>error_flash}}
+<div class="jumbotron">
+  <div class="container">
+  	<div class="col-md-6" id="col-left">
+    	<a class="twitter-timeline" href="https://twitter.com/GrecoSays" data-widget-id="501793601244778496">Tweets by @GrecoSays</a>
+	<script>
+		!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+	</script>
+	</div>
+	<div class="col-md-6" id="col-right">
+		<h2>Welcome to Greco Says!</h2>
+		<p>
+		This is a collection of quotes by me, Stephen Greco, as recalled and recorded by my friends. Feel free to browse the Twitter feed for the complete collection!
+		</p>
+		<h2>Random Quote</h2>
+		{{#if quote}}
+		<blockquote>
+  			<p class="lead">{{quote}}</p>
+  			<footer><cite title="Stephen Greco">Stephen Greco</cite></footer>
+		</blockquote>
+		{{else}}
+			<p class="lead">No quotes found.</p>
+		{{/if}}
+		<form role="form" action="quote" method="post">
+  			<div class="form-group">
+    			<label for="quoteBox">New Quote: </label>
+    			<textarea name="quote" class="form-control" id="quoteBox" placeholder="Enter your Greco quote here..." rows="3" ></textarea>
+
+    			<div class="input-group">
+      				<input type="text" name="submitter" class="form-control" id="submitterBox" placeholder="Your name">
+      				<span class="input-group-btn">
+        				<button type="submit" class="btn btn-success">Submit</button>
+      				</span>
+    			</div>
+  			</div>
+		</form>
+	</div>
+  </div>
+</div>
+{{>footer}}

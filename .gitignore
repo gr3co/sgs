@@ -1,0 +1,41 @@
+# Node
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+upload
+
+npm-debug.log
+node_modules
+
+config.js
+
+# OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+*~
